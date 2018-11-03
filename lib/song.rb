@@ -42,6 +42,7 @@ class Song
       song
     else
       test_song 
+    end
   end
   
 end
