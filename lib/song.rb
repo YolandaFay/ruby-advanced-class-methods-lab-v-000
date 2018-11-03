@@ -40,7 +40,7 @@ class Song
     if test_song != nil 
       test_song 
     else
-      create_by_name(song_name) 
+      create_by_name(song_name_two) 
     end
   end
   
