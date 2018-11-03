@@ -33,7 +33,9 @@ class Song
     #self.all.find {|song| song.name = song_name}
     self.all.each do |song|
       if song == song_name
-        song.name 
+        song.name
+      else
+        false 
       end
     end
   end
