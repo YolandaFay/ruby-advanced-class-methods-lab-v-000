@@ -53,7 +53,7 @@ class Song
     filename_array = filename_string.split("- ")
     song = self.new 
     song.artist_name = filename_array[0]
-    song.name = filename_array[1]
+    song.name = filename_array.split(".")[0]
     song 
   end
   
