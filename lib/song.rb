@@ -49,7 +49,7 @@ class Song
   end
   
   def self.new_from_filename(filename_string)
-    #filename_array = filename_string.split(/[.-]/)
+    #filename_array = filename_string.split(/[.-]/) - need to be able to remove whitespace
     song = self.new 
     song.artist_name = filename_string.split(" - ")[0]
     song.name = filename_string.split(" - ")[1].split(".")[0]
@@ -57,7 +57,8 @@ class Song
   end
   
   def self.create_from_filename(filename_string)
-end
+  
+  end
   
   
   def self.destroy_all 
