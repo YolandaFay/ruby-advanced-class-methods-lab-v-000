@@ -40,37 +40,7 @@ class Song
     end
   end
   
-  #def self.find_or_create_by_name(song_name)
-    
-    #test_song = find_by_name(song_name)
-    
-    #if test_song != nil 
-      #test_song 
-    #else
-      #create_by_name(song_name) 
-    #end
-  #end
   
-  def self.alphabetical
-    self.all.sort_by {|song| song.name}
-  end
-  
-  def self.new_from_filename(filename_string)
-    #filename_array = filename_string.split(/[.-]/) - need to be able to remove whitespace
-    song = self.new 
-    song.artist_name = filename_string.split(" - ")[0]
-    song.name = filename_string.split(" - ")[1].split(".")[0]
-    song 
-  end
-  
-  def self.create_from_filename(filename_string)
-    new_from_filename(filename_string).save 
-  end
-  
-  
-  def self.destroy_all 
-    self.all.clear 
-  end
   
 end
 
