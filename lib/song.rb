@@ -37,11 +37,11 @@ class Song
     
     test_song = find_by_name(song_name)
     
-    if test_song != nil 
-      test_song 
-    else
-      create_by_name(song_name) 
-    end
+    #if test_song != nil 
+      #test_song 
+    #else
+      #create_by_name(song_name) 
+    #end
   end
   
   def self.alphabetical
